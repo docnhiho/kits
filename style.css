@@ -1,0 +1,38 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFC297;
+    
+    width: 90px;
+    height: 821px;
+    
+}
+nav{
+    display: inline-block;
+}
+.icon{
+    margin-left: -9px;
+}
+.sidebar svg{
+    margin: 25px;
+    
+}
+.rela{
+    position: relative;
+}
+.abso{
+    position: absolute;
+    top: 78%;
+    left: 4%;
+    transform: translate(-49%, -44%);
+
+}
+.setting{
+    margin-left: -20px;
+    margin-top: 150px;
+}
+.menu{
+    display: inline-block;
+    
+
+}
