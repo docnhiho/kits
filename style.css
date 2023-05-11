@@ -1,38 +1,162 @@
-.sidebar{
+.sidebar {
     display: flex;
     flex-direction: column;
     background-color: #FFC297;
-    
-    width: 90px;
-    height: 821px;
-    
-}
-nav{
-    display: inline-block;
-}
-.icon{
-    margin-left: -9px;
-}
-.sidebar svg{
-    margin: 25px;
-    
-}
-.rela{
-    position: relative;
-}
-.abso{
-    position: absolute;
-    top: 78%;
-    left: 4%;
-    transform: translate(-49%, -44%);
+    /* width: 90px;
+    height: 821px; */
+    width: 8%;
+    float: left;
+
 
 }
-.setting{
+
+
+.icon {
+    margin-left: -9px;
+}
+
+.sidebar svg {
+    margin: 25px;
+
+}
+
+.rela {
+    position: relative;
+}
+
+.abso {
+    position: absolute;
+    top: 78%;
+    left: 3%;
+    transform: translate(-54%, -44%);
+
+}
+
+.setting {
     margin-left: -20px;
     margin-top: 150px;
 }
-.menu{
-    display: inline-block;
-    
+
+.menu {
+    float: left;
+    margin: 50px;
+    width: 16%;
 
 }
+
+.menu-bar {
+    margin-top: 32px;
+    margin-left: -23px;
+}
+
+.menu-bar-1 {
+    margin: 10px;
+    padding: 38px;
+}
+
+.menu-bar p {
+    float: left;
+    margin-left: 10px;
+    margin-top: 13px;
+}
+
+.profile {
+    float: right;
+    border-left: 1px solid;
+    padding:50px;
+    width: 65%;
+
+
+}
+.first-last{
+    display: flex;
+    justify-content: space-between;
+}
+.first-last div{
+    width: 40%;
+}
+/* .form div {
+    padding-top: 40px;
+} */
+.form input{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    margin-top: 40px;
+}
+
+.btn-cancle {
+    padding: 9px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: white;
+    color: #FF7008;
+    border: 2px solid #FF7008;
+    border-radius: 6px;
+}
+.btn-save{
+    background-color: #FF7008;
+    padding: 9px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    color: white;
+    border: 2px solid #FF7008;
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu {
+      display: none;
+    }
+    .profile{
+        border: none;
+        padding-left: 0px;
+        width: 80%;
+    }
+    .first-last{
+        display: block;
+    }
+    .form input {
+        width: 100%;
+        height: 30px;
+        margin-top: 8px;
+        margin-bottom: 51px;
+    }
+    .first-last div{
+        width: 100%;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFC297;
+        width: 11%;
+        float: left;
+    }
+    .abso {
+        position: absolute;
+        top: 78%;
+        left: 6%;
+        transform: translate(-57%, -44%);
+    }
+    .btn-save{
+        /* transition-property: transform; */
+        transition-duration: 1s;
+    }
+    .btn-save:hover{
+        transform: scale(1.5);
+    }
+
+  }
