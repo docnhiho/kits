@@ -53,7 +53,9 @@
     margin: 10px;
     padding: 38px;
 }
-
+ .active{
+    font-weight: bold;
+ }
 .menu-bar p {
     float: left;
     margin-left: 10px;
@@ -61,7 +63,7 @@
 }
 
 .profile {
-    float: right;
+    float: left;
     border-left: 1px solid;
     padding:50px;
     width: 65%;
@@ -117,7 +119,7 @@
     margin-left: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
     .menu {
       display: none;
     }
