@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,43 @@
     <title>Document</title>
 </head>
 <style>
-    #products{
+    #products {
         display: flex;
         flex-wrap: wrap;
     }
-    .im{
+
+    .im {
         width: 300px;
         height: auto;
         padding: 50px;
+
     }
-    .im img{
+
+    .im h3 {
+        width: auto;
+        height: 65px;
+    }
+
+    .im img {
         width: 200px;
         height: 300px;
+    }
+
+    .desc {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* number of lines to show */
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
     }
 </style>
 
 <body onload="fetchData()">
-    <div  id="products">
+    <div id="products">
     </div>
     <script src="fetch.js"></script>
 </body>
+
 </html>

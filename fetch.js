@@ -13,10 +13,14 @@ async function getAll() {
     for (let item of products) {
       productsDiv.innerHTML += `
       <div class="im">
-      <p>${item.id}</p>
-      <h4>${item.title}</h4>
+      
+      <h3>${item.title}</h3>
       <img src = "${item.image} " </br>
-      <p>${item.description}</p>
+      <p class="desc">${item.description}</p>
+      <b>Price: ${item.price}</b>
+      <p>${item.rating.count} sản phẩm</p>
+      <p>${item.rating.rate}</p>
+
 
       </div>
       `;
